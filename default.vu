@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{.title}{ {.title+2}}</title>
+	{!stylesheet(.style)}
+	{!script(.script)}
+</head>
+<body>
+<!--HEADER-->
+<header>
+	<h1>{.title}</h1>
+	{<h2>{.title+1}</h2>}
+	{<span id=slogan>{.title+3}</span>}
+</header>
+<!--NAVIGATION-->
+<nav>
+{!each(.nav, link, 		)}
+</nav>
+<!--CONTENT-->
+<section id="content">
+	{-body}
+</section>
+<!--FOOTER-->
+<footer>
+	{.foot}
+</footer>
+<!--END-->
+</body>
+</html>
